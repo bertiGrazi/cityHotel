@@ -19,6 +19,7 @@
 		B163B5AE280352C700043E8C /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B163B5AD280352C700043E8C /* RequestsViewController.swift */; };
 		B163B5B02803536100043E8C /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B163B5AF2803536100043E8C /* MyAccountViewController.swift */; };
 		B163B5B2280353B700043E8C /* MoreFeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B163B5B1280353B700043E8C /* MoreFeaturesViewController.swift */; };
+		B163B5C02803594600043E8C /* SearchPackagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B163B5BF2803594600043E8C /* SearchPackagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B163B5AD280352C700043E8C /* RequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
 		B163B5AF2803536100043E8C /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		B163B5B1280353B700043E8C /* MoreFeaturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreFeaturesViewController.swift; sourceTree = "<group>"; };
+		B163B5BF2803594600043E8C /* SearchPackagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPackagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,7 @@
 		B163B57A28034EC700043E8C /* cityHotel */ = {
 			isa = PBXGroup;
 			children = (
-				B163B5B52803549200043E8C /* Recourses */,
+				B163B5B52803549200043E8C /* Resources */,
 				B163B5B32803547700043E8C /* Sections  */,
 				B163B5B42803548600043E8C /* LaunchScreen */,
 				B163B58928034ECA00043E8C /* Info.plist */,
@@ -150,19 +152,20 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
-		B163B5B52803549200043E8C /* Recourses */ = {
+		B163B5B52803549200043E8C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				B163B58428034ECA00043E8C /* Assets.xcassets */,
 				B163B57B28034EC700043E8C /* AppDelegate.swift */,
 				B163B57D28034EC700043E8C /* SceneDelegate.swift */,
 			);
-			path = Recourses;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B163B5B6280354C100043E8C /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				B163B5BD2803592200043E8C /* SearchPackages */,
 				B163B5B8280354E000043E8C /* BusinessModel */,
 				B163B5B7280354CD00043E8C /* Controllers */,
 			);
@@ -214,6 +217,22 @@
 				B163B5B1280353B700043E8C /* MoreFeaturesViewController.swift */,
 			);
 			path = "More Features";
+			sourceTree = "<group>";
+		};
+		B163B5BD2803592200043E8C /* SearchPackages */ = {
+			isa = PBXGroup;
+			children = (
+				B163B5BE2803593200043E8C /* Controllers */,
+			);
+			path = SearchPackages;
+			sourceTree = "<group>";
+		};
+		B163B5BE2803593200043E8C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B163B5BF2803594600043E8C /* SearchPackagesViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +370,7 @@
 				B163B5B2280353B700043E8C /* MoreFeaturesViewController.swift in Sources */,
 				B163B5B02803536100043E8C /* MyAccountViewController.swift in Sources */,
 				B163B5AC2803513400043E8C /* PackagesViewController.swift in Sources */,
+				B163B5C02803594600043E8C /* SearchPackagesViewController.swift in Sources */,
 				B163B57C28034EC700043E8C /* AppDelegate.swift in Sources */,
 				B163B57E28034EC700043E8C /* SceneDelegate.swift in Sources */,
 			);

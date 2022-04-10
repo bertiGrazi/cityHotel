@@ -24,9 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         let packagesViewController = PackagesViewController()
+        packagesViewController.navigationItem.largeTitleDisplayMode = .always
         packagesViewController.tabBarItem = UITabBarItem(title: "Packages", image: UIImage(systemName: "airplane.departure"), tag: 1)
         
         let requestsViewController = RequestsViewController()
+        requestsViewController.navigationItem.largeTitleDisplayMode = .always
         requestsViewController.tabBarItem = UITabBarItem(title: "Requests", image: UIImage(systemName: "bag.fill"), tag: 1)
         
         let myAccountViewController = MyAccountViewController()
@@ -35,9 +37,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let moreFeaturesViewController = MoreFeaturesViewController()
         moreFeaturesViewController.tabBarItem = UITabBarItem(title: "More", image: UIImage(systemName: "ellipsis"), tag: 1)
         
+        let nav1 = UINavigationController(rootViewController: packagesViewController)
+        nav1.navigationBar.prefersLargeTitles = true
+        
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [highlightsViewController, packagesViewController, requestsViewController, myAccountViewController, moreFeaturesViewController]
-        tabBarController.selectedViewController = packagesViewController
+        tabBarController.viewControllers = [highlightsViewController, nav1, requestsViewController, myAccountViewController, moreFeaturesViewController]
+        tabBarController.selectedViewController = nav1
         
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
